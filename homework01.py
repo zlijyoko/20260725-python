@@ -20,6 +20,7 @@ print("a =", d, "b =", c)
 
 
 # 用 type() 列出下列各值的型別。 
+
 print(type( 42 ))
 print(type( 3.14 ))
 print(type( '42' ))
