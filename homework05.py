@@ -19,7 +19,3 @@ print('average = ',average )
 name = input( 'Name = ')
 height = input( 'Height (m) = ')
 weight = input( 'Weight (kg) = ')
-
-print('Name: ',name)
-print('Height: ',height ,'m')
-print('Weight: ',weight ,'kg')
