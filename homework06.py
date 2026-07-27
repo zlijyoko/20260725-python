@@ -7,15 +7,14 @@ print('remainder = ' ,integer % 2)
 
 # 輸入秒數 (例如 3725)，輸出 [ 一小時兩分五秒 ]。
 second = int(input( 'second = ' ))
+minute = second / 60
 
 if second / 60 > 60 :
     minute = second / 60
     print ( '0 小時 ', minute, '分 ', second,' 秒 ')
-    if minute / 60 > 60 :
-        hour = minute / 60
-        print ( hour,' 小時 ', minute, '分 ', second,' 秒 ')
-    else :
-        print ( '0 小時 ', minute, '分 ', second,' 秒 ')
+elif minute / 60 > 60 :
+    hour = minute / 60
+    print ( hour,' 小時 ', minute, '分 ', second,' 秒 ')
 else :
     print ( '0 小時 0 分 ', second,' 秒 ')
 
