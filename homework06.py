@@ -6,17 +6,17 @@ print('remainder = ' ,integer % 2)
 """ 如果是偶數 = 0 ，是奇數的話 = 1 """
 
 # 輸入秒數 (例如 3725)，輸出 [ 一小時兩分五秒 ]。
-second = int(input( 'second = ' ))
-minute = second / 60
 
-if second / 60 > 60 :
-    minute = second / 60
-    print ( '0 小時 ', minute, '分 ', second,' 秒 ')
-elif minute / 60 > 60 :
-    hour = minute / 60
-    print ( hour,' 小時 ', minute, '分 ', second,' 秒 ')
-else :
-    print ( '0 小時 0 分 ', second,' 秒 ')
+s = int(input( 'second = ' ))
+h = s / 3600 
+print('h = 'f'{h:.0f}')
+m = s % 3600 / 60
+print('m = 'f'{m:.0f}')
+s2 = s % 3600 % 60
+print('s = ',s2)
+
+print('second = ', f'{h:.0f}','小時', f'{m:.0f}','分鐘',s2 ,'秒') 
+
 
 # 先不要執行，猜出下列四式的結果與型別，再驗證 :
 # 10 / 3 ， 10 // 3 ， 10 % 3 ， 10 ** 3
